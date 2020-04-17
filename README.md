@@ -1,4 +1,1 @@
-"# involveme" 
-"# involveme" 
-"# involveme" 
-"# involveme" 
+Test Automation project created by Lior Razumovsky
