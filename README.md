@@ -1,7 +1,1 @@
-Test Automation project created by Lior Razumovsky
-GitHub
-,
-Directly
-push
-ppush
-lior
+Version 1.0
