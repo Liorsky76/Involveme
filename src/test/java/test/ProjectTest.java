@@ -230,7 +230,7 @@ public class ProjectTest extends BaseTest {
 		assertEquals(actualifprojectfound, expectedifprojectfound);
 	}
 
-	@Severity(SeverityLevel.NORMAL)
+	@Severity(SeverityLevel.CRITICAL)
 	@Test(priority = 15, description = "delete workspace")
 	@Description("verify that all projects will be deleted")
 	public void project_page_15() {
