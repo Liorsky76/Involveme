@@ -21,7 +21,7 @@ public class BaseTest {
 		Logger.getLogger("org.openqa.selenium").setLevel(Level.OFF);
 		WebDriverManager.chromiumdriver().setup();
 		driver = new ChromeDriver();
-		context.setAttribute("WebDriver", driver);
+		context.setAttribute("WebDriver", this.driver);
 		driver.get("https://app.involve.me/login");
 		driver.manage().window().maximize();
 	}
