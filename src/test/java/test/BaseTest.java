@@ -22,7 +22,7 @@ public class BaseTest {
 		WebDriverManager.chromiumdriver().setup();
 		driver = new ChromeDriver();
 		context.setAttribute("WebDriver", this.driver);
-		driver.get("https://app.involve.me/login");
+		driver.get("https://www.shichor.co.il/en");
 		driver.manage().window().maximize();
 	}
 }

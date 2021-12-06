@@ -1,9 +1,8 @@
 package pageObject;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -25,6 +24,7 @@ public class BasePage {
 	}
 
 	public void clear(WebElement webel) {
+		sleep(2000);
 		webel.clear();
 	}
 
@@ -33,11 +33,6 @@ public class BasePage {
 		webel.sendKeys(text);
 	}
 
-	public void dragAndDrop(WebElement from, WebElement to) {
-		Actions builder = new Actions(driver);
-		Action dragAndDrop = builder.clickAndHold(from).moveToElement(to).build();
-		dragAndDrop.perform();
-	}
 
 	public String getText(WebElement el) {
 		return el.getText();
